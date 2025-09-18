@@ -1,0 +1,336 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+.header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../images/background-image.jpg') 
+                no-repeat center center/cover;
+    border-bottom: 8px solid #222;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo img {
+    height: 36px;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.language-selector select {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #aaa;
+    padding: 7px 15px;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+.signin-btn {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 7px 17px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.signin-btn:hover {
+    background-color: #f40612;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 75px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.125rem;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.hero-content h2 {
+    font-size: 1.625rem;
+    margin-bottom: 29px;
+    font-weight: 400;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.email-form input {
+    height: 60px;
+    width: 450px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    border-radius: 2px 0 0 2px;
+}
+
+.email-form button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    font-size: 1.625rem;
+    padding: 0 26px;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.email-form button:hover {
+    background-color: #f40612;
+}
+
+/* Features Section */
+.features {
+    border-bottom: 8px solid #222;
+}
+
+.feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 45px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-text {
+    width: 52%;
+}
+
+.feature-text h2 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.feature-text p {
+    font-size: 1.5rem;
+}
+
+.feature-img {
+    width: 48%;
+    position: relative;
+}
+
+.feature-img img {
+    max-width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.feature-video {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 73%;
+    height: 100%;
+    max-height: 54%;
+    z-index: 1;
+}
+
+.feature-video video {
+    width: 100%;
+}
+
+.download-box {
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    background-color: #000;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 60%;
+    min-width: 15em;
+    z-index: 2;
+}
+
+.download-box img {
+    height: 72px;
+    margin-right: 15px;
+}
+
+.download-text h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.download-text p {
+    color: #0071eb;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.download-gif {
+    width: 48px;
+    height: 48px;
+    background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') no-repeat center center;
+    background-size: 100%;
+    margin-left: auto;
+}
+
+/* FAQ Section */
+.faq {
+    border-bottom: 8px solid #222;
+    padding: 70px 45px;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.accordion {
+    max-width: 815px;
+    margin: 0 auto 50px;
+}
+
+.accordion-item {
+    margin-bottom: 8px;
+}
+
+.accordion-question {
+    background-color: #303030;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+    padding: 20px 30px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-question:hover {
+    background-color: #414141;
+}
+
+.accordion-question span {
+    position: absolute;
+    right: 30px;
+    font-size: 40px;
+    top: 10px;
+}
+
+.accordion-answer {
+    background-color: #303030;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.accordion-answer p {
+    font-size: 26px;
+    padding: 30px;
+    text-align: left;
+}
+
+.accordion-item.active .accordion-answer {
+    max-height: 1200px;
+}
+
+.accordion-item.active .accordion-question span:before {
+    content: '×';
+}
+
+.email-signup {
+    margin-top: 20px;
+}
+
+.email-signup p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    color: #757575;
+    padding: 70px 45px;
+}
+
+.footer p:first-child {
+    margin-bottom: 30px;
+}
+
+.footer a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-column a {
+    margin-bottom: 16px;
+    font-size: 13px;
+}
+
+.footer-language {
+    margin-bottom: 20px;
+}
+
+.footer-country {
+    font-size: 13px;
+    margin-top: 24px;
+}
