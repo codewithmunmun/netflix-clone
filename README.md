@@ -9,6 +9,7 @@ A responsive Netflix website clone built with HTML, CSS, and JavaScript.
 - Footer with links and language selector
 
 ## File Structure
+```
 netflix-clone/
 ├── index.html
 ├── styles/
@@ -25,24 +26,19 @@ netflix-clone/
 │ ├── children.png
 │ └── boxshot.png
 └── README.md
+```
 
 ## How to Use
 1. Download or clone this repository
 2. Add the required images to the images folder:
-   - netflix-logo.png (Netflix logo)
-   - background.jpg (Hero background image)
-   - tv.png (TV image for features section)
-   - mobile.jpg (Mobile image for download feature)
-   - device-pile.png (Devices image)
-   - children.png (Kids profile image)
-   - boxshot.png (Stranger Things boxshot)
+   - background-image.jpg (background image)
 3. Open index.html in your browser
 
 ## Note
 This is a frontend clone for educational purposes only. All Netflix branding and content are property of Netflix, Inc.
 
 ## License
-This project is licensed under the MIT License [LICENSE].
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Author
 Created by Munmun Kumari.
